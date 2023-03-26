@@ -8,11 +8,17 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+// Host: sql12.freesqldatabase.com
+// Database name: sql12608617
+// Database user: sql12608617
+// Database password: XADr46M4vr
+// Port number: 3306
+
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "project101",
+  host: "sql12.freesqldatabase.com",
+  user: "sql12608617",
+  password: "XADr46M4vr",
+  database: "sql12608617",
 });
 
 connection.connect((err) => {
